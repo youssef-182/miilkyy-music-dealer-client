@@ -1,9 +1,9 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+	<div class="pt-7 background min-h-screen">
+		<main class="max-w-xl mx-auto bg-white p-6 rounded-2xl">
+	  	<router-view/>
+		</main>
+	</div>
 </template>
 
 <style lang="scss">
@@ -11,20 +11,15 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  // text-align: center;
+  // color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.background {
+	background-image: url('./assets/u3e2l1jt0ar61.jpg');
+	height: 100%;
+	// background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
 }
 </style>
